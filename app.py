@@ -7,7 +7,6 @@ CORS(app)
 ALLOWED_EXTENSIONS = set(['tiff', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
 
 @app.route('/results', methods=['POST'])
-#todo: accept only images
 def results():
     if 'image' not in request.files:
         return 'there is no image in form!'
