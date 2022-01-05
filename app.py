@@ -6,10 +6,6 @@ CORS(app)
 
 ALLOWED_EXTENSIONS = set(['tiff', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
 
-@app.route('/', methods=['GET'])
-def index():
-    return "Success"
-
 @app.route('/results', methods=['POST'])
 #todo: accept only images
 def results():
